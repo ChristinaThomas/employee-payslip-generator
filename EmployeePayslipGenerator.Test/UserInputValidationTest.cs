@@ -198,7 +198,7 @@ namespace EmployeePayslipGenerator.Test
                 var salaryModel = salaryCalculatorService.GetSalary(employee);
 
                 payslip.AppendLine();
-                payslip.AppendFormat("Monthly Payslip for {0}: ", employee?.FullName);
+                payslip.AppendFormat("Monthly Payslip for: {0} ", employee?.FullName);
                 payslip.AppendLine();
                 payslip.AppendFormat("Gross Monthly Income: ${0}", salaryModel?.GrossMonthlyIncome);
                 payslip.AppendLine();
